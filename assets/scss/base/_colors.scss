@@ -1,0 +1,42 @@
+// Theme Primary Color
+$primary: #438ffe;
+
+// Mainly use for UI controls like Buttons
+$secondary: #fe764b;
+
+// Used for icons 
+$accent: #8bc38a;
+
+// Mainly use for Normal Text color
+$gray: #989d9e;
+
+// Additional Shades of gray color
+$light: #f8f8f8;
+$extra-light: #fcfcfc;
+
+// content background color
+$white:#ffff;
+
+// Body
+
+$body-bg: #ffffff;
+
+// Topbar
+$topbar-bg: #ffffff;
+
+// cards
+$card-bg: #ffffff;
+$card-hover-bg: $primary;
+
+// Content Main
+$content-wrapper-bg: #f8f8f8;
+$content-title-font-size: 2rem;
+$content-title-margin-bottom: 1.5rem;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "gray": $gray,
+  "light": $light,
+  "accent": $accent
+);

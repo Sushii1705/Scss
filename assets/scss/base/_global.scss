@@ -1,0 +1,51 @@
+// Global styles goes here
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html ,body {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: $font-family;
+}
+
+.h-100 {
+    height: 100%;
+}
+.d-flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.m-b-1 {
+  margin-bottom: 2rem;
+}

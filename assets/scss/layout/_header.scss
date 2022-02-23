@@ -1,0 +1,9 @@
+// Header area style
+.header {
+    padding: $padding;
+    border-bottom: $border-bottom;
+    span {
+        flex: 0 0 $sidebar-width;
+        padding: $padding;
+    }
+}
