@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap");
+.text-accent {
+  color: #8bc38a;
+}
+
+.text-primary {
+  color: #438ffe;
+}
+
+.text-secondary {
+  color: #83bcbd;
+}
+
+.text-warning {
+  color: #fe754a;
+}
+
+.text-light {
+  color: #f8f8f8;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -74,47 +94,156 @@ body {
 button {
   background-color: #438ffe;
   color: #ffff;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  height: 45px;
   border: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+input {
+  padding: 0px 20px;
+  background-color: #f5f7f9;
+  border: none;
+  color: #abb1bf;
+  width: 362px;
+  height: 45px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .cards {
-  padding: 10px 20px;
+  padding: 0px 20px;
   background-color: #ffff;
+  width: 25%;
+  margin-right: 10px;
 }
 
 .header {
-  padding: 10px 20px;
-  border-bottom: #ebebeb;
+  padding: 0px 20px;
+  border-bottom: 1px solid #e2e2e2;
+  height: 91px;
 }
 
 .header span {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60px;
           flex: 0 0 60px;
-  padding: 10px 20px;
+  padding: 0px 20px;
+  color: #438ffe;
+  font-size: 1.5rem;
+}
+
+.header .topbar-nav {
+  padding: 23px 40px;
+  position: relative;
+}
+
+.header .topbar-nav span {
+  position: absolute;
+  left: 32px;
+  top: 35px;
+  height: 21px;
+  opacity: 0.5;
+}
+
+.header .topbar-items {
+  padding: 0 2rem;
+}
+
+.header .side-icons span {
+  color: gray;
+}
+
+img {
+  height: 20px;
+}
+
+.profile {
+  height: 45px;
+  width: 45px;
+}
+
+.profile img {
+  height: auto;
+  max-width: 100%;
 }
 
 .container {
   background-color: #f8f8f8;
-  padding: 10px 20px;
+  padding: 1rem;
 }
 
 .container .main {
   background-color: #f8f8f8;
 }
 
+.cards:hover, .cards.active {
+  background-color: #438ffe;
+  color: #ffff;
+}
+
+.cards .card-icon {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+
+.cards p {
+  padding-bottom: 1rem;
+}
+
+.cards .card-text {
+  border-bottom: 1px solid #f8f8f8;
+}
+
+.table-container {
+  width: 60%;
+}
+
+.table-container table {
+  width: 100%;
+  text-align: left;
+  background-color: #ffff;
+  padding: 0px 20px;
+}
+
+.table-container table th, .table-container table td {
+  padding: 1rem;
+}
+
+.table-container table td {
+  background-color: #f5f7f9;
+}
+
+.skills-container {
+  width: 40%;
+  background-color: #ffff;
+}
+
 #primarynav {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60px;
           flex: 0 0 60px;
-  padding: 10px 20px;
+  padding: 0px 20px;
 }
 
 #primarynav .nav-list .nav-items {
   margin-bottom: 2rem;
   padding: 1rem 1rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+#primarynav .nav-list .nav-items a {
+  color: gray;
+}
+
+#primarynav .nav-list .nav-items a.active {
+  color: #438ffe;
+}
+
+#primarynav .bottom-items span {
+  margin-bottom: 2rem;
+  padding: 1rem 1rem;
+  color: gray;
+  font-size: 1.5rem;
 }
 
 .text-decoration-none {
@@ -125,7 +254,15 @@ button {
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,9 +6,27 @@
 
   .nav-list {
     .nav-items {
-        margin-bottom: $nav-item-margin-bottom;
-        padding: $nav-item-padding-y $nav-item-padding-y;
-        font-size: $font-size-base;
+      margin-bottom: $nav-item-margin-bottom;
+      padding: $nav-item-padding-y $nav-item-padding-y;
+      font-size: $topbar-icon-size;
+      a{
+         
+        color: $gray;
+        &.active{
+          color: $primary;
+        }
+
+      }
+    }
+  }
+  .bottom-items {
+    span {
+      margin-bottom: $nav-item-margin-bottom;
+      padding: $nav-item-padding-y $nav-item-padding-x;
+      color: $gray;
+      font-size: $topbar-icon-size;
+      // @extend .nav-items;
+      // background-color: aqua;
     }
   }
 }

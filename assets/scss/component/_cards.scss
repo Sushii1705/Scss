@@ -1,6 +1,9 @@
 // Card styles goes here
 .cards {
-    padding: $padding;
-    background-color: $white;
-    
+  padding: $padding;
+  background-color: $white;
+//   padding: 10px 20px;
+
+  width: $card-width;
+  margin-right: $card-margin-right;
 }

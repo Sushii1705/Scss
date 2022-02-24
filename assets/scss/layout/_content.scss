@@ -1,7 +1,48 @@
 .container {
     background-color: $content-wrapper-bg;
-    padding: $padding;
+    padding: $content-wrapper-padding;
     .main {
         background-color: $light;
     }
+}
+.cards {
+    
+    // color:$content-wrapper-bg;
+    &:hover,&.active {
+        background-color: $primary;
+        color: $white;
+    }
+    .card-icon {
+        font-size: $card-icon-font-size;
+        padding-bottom: 1rem;
+    }
+    p {
+        // font-size: $card-text-font-size;
+        padding-bottom: 1rem;
+    }
+    .card-text {
+        border-bottom: 1px solid $light;
+    }
+   
+}
+.table-container {
+    width: $table-container-width;
+    table{
+        width:$table-width ;
+        text-align: left;
+        background-color: $table-bg-color;
+        padding: $padding;
+        th,td{
+            padding:$table-cell-padding;
+        }
+        td {
+            background-color: $table-cell-bg-color;
+
+        }
+    }
+}
+.skills-container {
+    width: $skils-container-width;
+    background-color: $white;
+    
 }

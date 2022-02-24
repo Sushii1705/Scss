@@ -1,9 +1,43 @@
 // Header area style
 .header {
+  padding: $padding;
+  border-bottom: 1px solid $border-bottom;
+  height: 91px;
+  span {
+    flex: 0 0 $sidebar-width;
     padding: $padding;
-    border-bottom: $border-bottom;
+    color: $primary;
+    font-size: $topbar-icon-size;
+  }
+  .topbar-nav {
+    // padding: $topbar-padding-y $topbar-padding-x;
+    padding: 23px 40px;
+    position: relative;
     span {
-        flex: 0 0 $sidebar-width;
-        padding: $padding;
+      position: absolute;
+      left: 32px;
+      top: 35px;
+      height: 21px;
+      opacity: 0.5;
     }
+  }
+  .topbar-items {
+    padding: 0 $topbar-padding-x;
+  }
+  .side-icons {
+    span {
+      color: $gray;
+    }
+  }
+}
+img {
+  height: 20px;
+}
+.profile {
+  height: 45px;
+  width: 45px;
+  img {
+    height: auto;
+    max-width: 100%;
+  }
 }

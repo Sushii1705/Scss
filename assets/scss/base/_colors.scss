@@ -2,13 +2,16 @@
 $primary: #438ffe;
 
 // Mainly use for UI controls like Buttons
-$secondary: #fe764b;
+$secondary: #83bcbd;
 
 // Used for icons 
 $accent: #8bc38a;
 
 // Mainly use for Normal Text color
-$gray: #989d9e;
+$warning: #fe754a;
+
+$gray:gray;
+
 
 // Additional Shades of gray color
 $light: #f8f8f8;
@@ -23,20 +26,28 @@ $body-bg: #ffffff;
 
 // Topbar
 $topbar-bg: #ffffff;
+$topbar-input-bg:#f5f7f9;
 
 // cards
 $card-bg: #ffffff;
 $card-hover-bg: $primary;
+$card-text-color:#c0c4cf;
 
 // Content Main
 $content-wrapper-bg: #f8f8f8;
 $content-title-font-size: 2rem;
 $content-title-margin-bottom: 1.5rem;
 
+
+// table 
+$table-bg-color:$white;
+$table-cell-bg-color:#f5f7f9;
+
 $theme-colors: (
+  "accent": $accent,
   "primary": $primary,
   "secondary": $secondary,
-  "gray": $gray,
-  "light": $light,
-  "accent": $accent
+  "warning":$warning,
+  "light": $light
+
 );

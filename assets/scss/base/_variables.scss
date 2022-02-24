@@ -11,9 +11,17 @@ $transition-timing: 0.4s;
 // Border
 $border-radius: 12px;
 $rounded-circle: 50%;
-$border-bottom:#ebebeb;
+$border-bottom:#e2e2e2;
 
 // header
+$topbar-padding-x:2rem;
+$topbar-padding-y:1rem;
+$topbar-icon-size:1.5rem;
+// padding: 23px 40px;
+//input 
+$input-width:362px;
+$input-height:45px; 
+
 
 
 // sidebar
@@ -26,7 +34,31 @@ $nav-item-margin-bottom: 2rem;
 // $header-nav-margin-bottom: 1rem;
 
 // spacing
-$padding :10px 20px;
+$padding :0px 20px;
+
 
 // main
-$content-wrapper-bg: #f8f8f8;
+
+$content-wrapper-padding:1rem;
+
+
+
+// cards
+$card-width:25%;
+$card-margin-right:10px;
+$card-text-font-size: 2rem;
+$card-text-font-size-sm: 0.825rem;
+$card-icon-font-size: 1.8rem;
+
+
+// table
+$table-container-width: 60%;
+$table-width:100%;
+$table-header-padding:1rem;
+$table-cell-padding:1rem;
+
+// $table-height:100%
+
+// skills & views
+$skils-container-width:40%;
+$skills-width:100%;

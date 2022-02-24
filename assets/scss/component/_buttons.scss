@@ -3,5 +3,7 @@ button {
     background-color: $primary;
     color: $white;
     padding: $padding;
+    height: 45px;
     border: none;
+    font-family: $font-family
 }

@@ -1,1 +1,7 @@
 // Function styles goes here
+@each $key,
+$clr in $theme-colors {
+    .text-#{$key} {
+        color: $clr;
+    }
+}
