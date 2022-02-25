@@ -3,6 +3,7 @@
 #primarynav {
   flex: 0 0 $sidebar-width;
   padding: $padding;
+  transition: all $transition-timing;
 
   .nav-list {
     .nav-items {
@@ -12,7 +13,7 @@
       a{
          
         color: $gray;
-        &.active{
+        &:hover{
           color: $primary;
         }
 
@@ -30,3 +31,43 @@
     }
   }
 }
+
+
+.nav-bar {
+  position: relative;
+  #checkbox {
+    // position: absolute;
+    display: none;
+  }
+  label {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transition: all $transition-timing;
+  }
+}
+label {
+  span {
+    color: $gray;
+    font-size: 1.5rem;
+  }
+
+}
+#checkbox:checked + #primarynav{
+  
+      width: 0;
+      flex-basis: 0;
+      padding: 0px;
+      
+      
+      
+    }
+    
+    #checkbox:checked +#primarynav ~ .toggle {
+      left: 0%;
+      span{
+      display: block;
+      transform: rotate(180deg) ;
+      
+    }
+  }

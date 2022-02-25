@@ -1,9 +1,67 @@
 // Card styles goes here
+
+.card-container {
+  padding-bottom: $padding-bottom;
+
+  .cards {
+    padding: 25px 25px;
+
+    transition: all $transition-timing;
+    // color:$content-wrapper-bg;
+    // &:hover,&.active {
+    //     // background-color: $primary;
+    //     color: $white;
+    // }
+    .card-icon {
+      font-size: $card-icon-font-size;
+      padding-bottom: 1rem;
+    }
+    p {
+      // font-size: $card-text-font-size;
+      padding-bottom: 1rem;
+    }
+    .card-text {
+      border-bottom: 1px solid $light;
+      font-size: $font-size-medium;
+    }
+    .card-text-sm {
+      padding-top: 15px;
+      color: #b0b5c3;
+    }
+  }
+}
+
 .cards {
   padding: $padding;
   background-color: $white;
-//   padding: 10px 20px;
+  //   padding: 10px 20px;
 
   width: $card-width;
   margin-right: $card-margin-right;
+}
+
+@each $key, $clr in $theme-colors {
+  .cards-#{$key} {
+    .text-#{$key} {
+      color: $clr;
+    }
+    
+    &:hover {
+      background-color: $clr;
+      color: $white;
+      .card-icon{
+        color:$white;
+      }
+      .card-text-sm {
+        color: $white;
+      }
+      
+      .text-#{$key} {
+        color: $white;
+      }
+    }
+  }
+  .icon-#{$key} {
+    color: $clr;
+  }
 }

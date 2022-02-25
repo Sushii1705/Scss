@@ -2,6 +2,7 @@
 
 //fonts
 $font-size-base: 1rem;
+$font-size-medium:30px;
 $font-family: 'Josefin Sans', sans-serif;
 $font-bold: 500;
 
@@ -34,18 +35,20 @@ $nav-item-margin-bottom: 2rem;
 // $header-nav-margin-bottom: 1rem;
 
 // spacing
-$padding :0px 20px;
+$padding :10px 20px;
+$padding-bottom:30px;
 
 
 // main
 
-$content-wrapper-padding:1rem;
+$content-wrapper-padding:2.2rem;
+$content-header-padding:30px;
 
 
 
 // cards
 $card-width:25%;
-$card-margin-right:10px;
+$card-margin-right:20px;
 $card-text-font-size: 2rem;
 $card-text-font-size-sm: 0.825rem;
 $card-icon-font-size: 1.8rem;
@@ -55,7 +58,7 @@ $card-icon-font-size: 1.8rem;
 $table-container-width: 60%;
 $table-width:100%;
 $table-header-padding:1rem;
-$table-cell-padding:1rem;
+$table-cell-padding:$padding;
 
 // $table-height:100%
 

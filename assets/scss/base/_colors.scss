@@ -10,12 +10,13 @@ $accent: #8bc38a;
 // Mainly use for Normal Text color
 $warning: #fe754a;
 
-$gray:gray;
+$gray:#abb1bf;
 
 
 // Additional Shades of gray color
-$light: #f8f8f8;
-$extra-light: #fcfcfc;
+// $light: #f8f8f8;
+$light:#e2e2e2;
+$extra-light: #f8f8f8;
 
 // content background color
 $white:#ffff;
@@ -41,7 +42,7 @@ $content-title-margin-bottom: 1.5rem;
 
 // table 
 $table-bg-color:$white;
-$table-cell-bg-color:#f5f7f9;
+$table-row-bg-color:#f5f7f9;
 
 $theme-colors: (
   "accent": $accent,

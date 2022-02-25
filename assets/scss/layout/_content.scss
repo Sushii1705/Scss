@@ -1,48 +1,67 @@
 .container {
-    background-color: $content-wrapper-bg;
-    padding: $content-wrapper-padding;
-    .main {
-        background-color: $light;
+  background-color: $content-wrapper-bg;
+  padding: $content-wrapper-padding;
+  .main {
+    background-color: $extra-light;
+    .content-header {
+      padding-bottom: $content-header-padding;
     }
+  }
 }
-.cards {
-    
-    // color:$content-wrapper-bg;
-    &:hover,&.active {
-        background-color: $primary;
-        color: $white;
-    }
-    .card-icon {
-        font-size: $card-icon-font-size;
-        padding-bottom: 1rem;
-    }
-    p {
-        // font-size: $card-text-font-size;
-        padding-bottom: 1rem;
-    }
-    .card-text {
-        border-bottom: 1px solid $light;
-    }
-   
-}
-.table-container {
-    width: $table-container-width;
-    table{
-        width:$table-width ;
-        text-align: left;
-        background-color: $table-bg-color;
-        padding: $padding;
-        th,td{
-            padding:$table-cell-padding;
-        }
-        td {
-            background-color: $table-cell-bg-color;
-
-        }
-    }
-}
+// .table-container {
+//   width: $table-container-width;
+//   table {
+//     width: $table-width;
+//     text-align: left;
+//     background-color: $table-bg-color;
+//     padding: $padding;
+//     border-collapse: collapse;
+//     th,td{
+//       width: 20%;
+//       padding: 1.75rem 1.75rem;
+//     }
+//     // td {
+//     //   background-color: $table-cell-bg-color;
+//     // }
+//   }
+//   tbody {
+//     tr{
+//       background-color: $table-row-bg-color;
+//       border-bottom: 10px solid white;
+//     }
+//   }
+// }
 .skills-container {
-    width: $skils-container-width;
-    background-color: $white;
+  width: $skils-container-width;
+  background-color: $white;
+}
+
+.table-container {
+  
+  .table-header {
+    table {
+      width: 100%;
+      text-align: left;
+      background-color: $table-bg-color;
+    }
     
+    th,td {
+      padding: 2rem 2rem;
+    }
+    
+  }
+  .table-body {
+    table {
+      text-align: left;
+      border-collapse: collapse;
+      width: 100%;
+      tr {
+        background-color: $table-row-bg-color;
+        border-bottom: 10px solid white;
+      }
+      td {
+        padding: 2rem 2rem;
+      }
+    }
+    }
 }

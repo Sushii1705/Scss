@@ -1,12 +1,18 @@
 // Form controls styles goes here
-input {
-    
-    padding: $padding;
-    background-color:$topbar-input-bg ;
-    border: none;
-    color: #abb1bf;
-    width: $input-width;
-    height: $input-height;
-    font-family: $font-family;
-    
+.header {
+
+    input {
+        
+        padding: $padding;
+        background-color:$topbar-input-bg ;
+        border: none;
+        color: #abb1bf;
+        width: $input-width;
+        height: $input-height;
+        font-family: $font-family;
+        &:focus-visible {
+            outline: none;
+        }
+        
+    }
 }

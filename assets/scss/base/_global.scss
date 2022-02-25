@@ -8,6 +8,12 @@ html ,body {
   height: 100%;
   overflow: hidden;
 }
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-auto {
+  overflow: auto;
+}
 body {
   font-family: $font-family;
 }
@@ -48,4 +54,8 @@ body {
 
 .m-b-1 {
   margin-bottom: 2rem;
+}
+
+.min-H {
+  min-height: 400px;
 }

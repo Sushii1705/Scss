@@ -17,17 +17,20 @@
           class="topbar-items d-flex flex-colum justify-content-space-between flex-grow-1"
         >
           <div class="topbar-nav">
-            
-              <span>
-                <img src="./assets/image/icons8-search.svg" alt="Search">
-              </span>
-           
-            <input type="text" placeholder="     search for transaction ,items,etc" />
+            <span>
+              <img src="./assets/image/icons8-search.svg" alt="Search" />
+            </span>
+
+            <input
+              type="text"
+              placeholder="     search for transaction ,items,etc"
+            />
             <button type="button">Search</button>
           </div>
           <div class="side-icons d-flex align-center">
-            <span class="icon-bubble"></span>
-            <span class="icon-bell"></span>
+            <span class="icon-bubble"> </span>
+
+            <span class="icon-bell"> </span>
             <div class="profile">
               <img
                 src="./assets/image/avatar-svgrepo-com.svg"
@@ -38,8 +41,10 @@
         </div>
       </div>
       <!-- header-end -->
-      <div class="d-flex flex-grow-1">
+      <div class="nav-bar d-flex flex-grow-1 overflow-hidden">
         <!-- sidebar-start -->
+        <input type="checkbox" id="checkbox" />
+
         <aside
           id="primarynav"
           class="d-flex flex-column justify-content-space-between"
@@ -65,113 +70,143 @@
             <span class="icon-exit"></span>
           </div>
         </aside>
+        <label class="toggle" for="checkbox"
+          ><span href="#" class="icon-circle-right"></span
+        ></label>
         <!-- sidebar-end -->
         <!-- main-start -->
         <div class="container flex-grow-1">
-          <div class="main h-100">
-            <div>
+          <div class="main h-100 d-flex flex-column overflow-auto">
+            <div class="content-header">
               <h1>Dashboard</h1>
             </div>
-            <div class="d-flex justify-content-space-between">
-              <div class="cards active">
-                <div class="d-flex">
-                  <span class="icon-eye card-icon "></span>
-                  <span class="icon-timeline"></span>
+            <div class="d-flex justify-content-space-between card-container">
+              <div class="cards cards-primary">
+                <div class="d-flex justify-content-space-between">
+                  <span class="icon-eye card-icon text-primary"></span>
+                  <span class="icon-timeline card-icon icon-accent"></span>
                 </div>
-                <div>
-                  <p>Total Views</p>
+                <div class="">
+                  <p class="card-text-sm">Total Views</p>
 
                   <p class="card-text">308.408</p>
 
-                  <p>starts from 1 jan 2021</p>
+                  <p class="card-text-sm">starts from 1 jan 2021</p>
                 </div>
               </div>
-              <div class="cards ">
-                <div class="d-flex">
-                  <span class="icon-cart card-icon text-accent "></span>
-                  <span></span>
+              <div class="cards cards-accent">
+                <div class="d-flex justify-content-space-between">
+                  <span class="icon-cart card-icon text-accent"></span>
+                  <span class="icon-timeline card-icon icon-warning"></span>
                 </div>
                 <div>
-                  <p>Total Products</p>
+                  <p class="card-text-sm">Total Products</p>
                   <div>
-                    <p  class="card-text">10.820</p>
+                    <p class="card-text">10.820</p>
                   </div>
-                  <div>+ Add New Product</div>
+                  <div class="card-text-sm">+ Add New Product</div>
                 </div>
               </div>
-              <div class="cards">
-                <div class="d-flex">
-                  <span class="icon-users card-icon text-primary "></span>
-                  <span></span>
+              <div class="cards cards-primary">
+                <div class="d-flex justify-content-space-between">
+                  <span class="icon-users card-icon text-primary"></span>
+                  <span class="icon-timeline card-icon icon-accent"></span>
                 </div>
                 <div>
-                  <p>Total Users</p>
+                  <p class="card-text-sm">Total Users</p>
                   <div>
-                    <p  class="card-text">8.425</p>
+                    <p class="card-text">8.425</p>
                   </div>
                   <div>
-                    <p>new user noted every week</p>
+                    <p class="card-text-sm">new user noted every week</p>
                   </div>
                 </div>
               </div>
-              <div class="cards">
-                <div class="d-flex">
-                  <span class="icon-coin-dollar card-icon text-secondary"></span>
-                  <span></span>
+              <div class="cards cards-secondary">
+                <div class="d-flex justify-content-space-between">
+                  <span
+                    class="icon-coin-dollar card-icon text-secondary"
+                  ></span>
+                  <span class="icon-timeline card-icon icon-accent"></span>
                 </div>
                 <div>
-                  <p>Top Sells</p>
-                  <div  class="card-text">1.028.623</div>
+                  <p class="card-text-sm">Top Sells</p>
+                  <p class="card-text">1.028.623</p>
                   <div>
-                    <p>start from 1 jan 2021</p>
+                    <p class="card-text-sm">start from 1 jan 2021</p>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="d-flex h-100">
-              <div class="table-container flex-grow-1">
-                <table>
-                  <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Product Name</th>
-                      <th>status</th>
-                      <th>sold</th>
-                      <th>view</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>New Mobile App Kit...</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>40+ landingpage Temp..</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Doctor consultant UI KIT..</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>startup Illustration KIT ve..</td>
-                      <td>Active</td>
-                      <td>10</td>
-                      <td>320</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="d-flex h-100 overflow-hidden min-H"> 
+
+              <!-- table:start -->
+              <div class="table-container flex-grow-1 d-flex flex-column overflow-hidden ">
+                <div class="table-header">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>No</th>
+                        <th></th>
+                        <th>Product Name</th>
+                        <th>status</th>
+                        <th>sold</th>
+                        <th>view</th>
+                      </tr>
+                    </thead>
+                  </table>
+                </div>
+
+                <div class="table-body flex-grow-1 overflow-auto">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>New Mobile App Kit...</td>
+                        <td>Active</td>
+                        <td>10</td>
+                        <td>320</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>40+ landingpage Temp..</td>
+                        <td>Active</td>
+                        <td>10</td>
+                        <td>320</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>Doctor consultant UI KIT..</td>
+                        <td>Active</td>
+                        <td>10</td>
+                        <td>320</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>startup Illustration KIT ve..</td>
+                        <td>Active</td>
+                        <td>10</td>
+                        <td>320</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
+              <!-- table:end -->
+
+              <!-- statics:start -->
               <div class="skills-container">
                 <div class="d-flex">
                   <h5>View skills</h5>
@@ -212,6 +247,7 @@
                   </div>
                 </div>
               </div>
+              <!-- statics:end -->
             </div>
           </div>
         </div>
