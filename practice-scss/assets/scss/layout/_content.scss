@@ -34,23 +34,48 @@
 .skills-container {
   width: $skils-container-width;
   background-color: $white;
+  font-size: $font-size-base;
+  padding: $padding;
+  @include breakpoint(xl) {
+    width: 100%;
+  }
+  .view-bar {
+    width: 100%;
+    padding: $padding;
+    .bar {
+      height: 100px;
+      background-color: #83bcbd;
+      width: 10px;
+      .bar-item {
+        height: 60px;
+        background-color: #fe764b;
+      }
+    }
+  }
 }
 
 .table-container {
-  
   .table-header {
     table {
       width: 100%;
       text-align: left;
       background-color: $table-bg-color;
     }
-    
-    th,td {
+
+    th,
+    td {
       padding: 2rem 2rem;
+      @include breakpoint(lg) {
+        padding: 2rem 1rem;
+      }
     }
-    
   }
   .table-body {
+    padding: 1rem;
+    background-color: $white;
+    @include breakpoint(lg) {
+      margin-bottom: 2rem;
+    }
     table {
       text-align: left;
       border-collapse: collapse;
@@ -61,7 +86,13 @@
       }
       td {
         padding: 2rem 2rem;
+        @include breakpoint(lg) {
+          padding: 2rem 1rem;
+        }
+        @include breakpoint(md) {
+          padding: 2rem 0.9rem;
+        }
       }
     }
-    }
+  }
 }

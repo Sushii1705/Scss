@@ -1,18 +1,27 @@
 // Form controls styles goes here
 .header {
-
+  .topbar-nav {
     input {
-        
-        padding: $padding;
-        background-color:$topbar-input-bg ;
-        border: none;
-        color: #abb1bf;
-        width: $input-width;
-        height: $input-height;
-        font-family: $font-family;
-        &:focus-visible {
-            outline: none;
-        }
-        
+      padding: $padding;
+      background-color: $topbar-input-bg;
+      border: none;
+      color: #abb1bf;
+      width: $input-width;
+      height: $input-height;
+      font-family: $font-family;
+      &:focus-visible {
+        outline: none;
+      }
+      @include breakpoint(lg) {
+        width: 282px;
+      }
+      @include breakpoint(sm) {
+          width: 100px;
+      }
+    //   @include breakpoint(md) {
+    //     width: 100px;
+    //   }
     }
+  }
+  
 }

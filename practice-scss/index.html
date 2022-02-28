@@ -22,22 +22,24 @@
             </span>
 
             <input
-              type="text"
+              type="search"
               placeholder="     search for transaction ,items,etc"
             />
             <button type="button">Search</button>
           </div>
+          <input type="checkbox" id="check-menu"/>
           <div class="side-icons d-flex align-center">
             <span class="icon-bubble"> </span>
-
+            
             <span class="icon-bell"> </span>
             <div class="profile">
               <img
-                src="./assets/image/avatar-svgrepo-com.svg"
-                alt="user image"
+              src="./assets/image/avatar-svgrepo-com.svg"
+              alt="user image"
               />
             </div>
           </div>
+          <label for="check-menu"><span class="icon-circle-down"></span></label>
         </div>
       </div>
       <!-- header-end -->
@@ -75,12 +77,14 @@
         ></label>
         <!-- sidebar-end -->
         <!-- main-start -->
-        <div class="container flex-grow-1">
-          <div class="main h-100 d-flex flex-column overflow-auto">
+        <div class="container flex-grow-1 overflow-auto">
+          <div class="main h-100 d-flex flex-column">
             <div class="content-header">
               <h1>Dashboard</h1>
             </div>
-            <div class="d-flex justify-content-space-between card-container">
+            <div
+              class="d-flex flex-wrap justify-content-space-between card-container"
+            >
               <div class="cards cards-primary">
                 <div class="d-flex justify-content-space-between">
                   <span class="icon-eye card-icon text-primary"></span>
@@ -138,10 +142,9 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex h-100 overflow-hidden min-H"> 
-
+            <div class="d-flex flex-wrap">
               <!-- table:start -->
-              <div class="table-container flex-grow-1 d-flex flex-column overflow-hidden ">
+              <div class="table-container flex-grow-1 d-flex flex-column min-H">
                 <div class="table-header">
                   <table>
                     <thead>
@@ -162,7 +165,14 @@
                     <tbody>
                       <tr>
                         <td>1</td>
-                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>
+                          <figure>
+                            <img
+                              src="./assets/image/avatar-svgrepo-com.svg"
+                              alt="image"
+                            />
+                          </figure>
+                        </td>
                         <td>New Mobile App Kit...</td>
                         <td>Active</td>
                         <td>10</td>
@@ -170,7 +180,14 @@
                       </tr>
                       <tr>
                         <td>2</td>
-                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>
+                          <figure>
+                            <img
+                              src="./assets/image/avatar-svgrepo-com.svg"
+                              alt="image"
+                            />
+                          </figure>
+                        </td>
                         <td>40+ landingpage Temp..</td>
                         <td>Active</td>
                         <td>10</td>
@@ -178,7 +195,14 @@
                       </tr>
                       <tr>
                         <td>3</td>
-                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>
+                          <figure>
+                            <img
+                              src="./assets/image/avatar-svgrepo-com.svg"
+                              alt="image"
+                            />
+                          </figure>
+                        </td>
                         <td>Doctor consultant UI KIT..</td>
                         <td>Active</td>
                         <td>10</td>
@@ -186,7 +210,14 @@
                       </tr>
                       <tr>
                         <td>4</td>
-                        <td><figure><img src="./assets/image/avatar-svgrepo-com.svg" alt="image"></figure></td>
+                        <td>
+                          <figure>
+                            <img
+                              src="./assets/image/avatar-svgrepo-com.svg"
+                              alt="image"
+                            />
+                          </figure>
+                        </td>
                         <td>startup Illustration KIT ve..</td>
                         <td>Active</td>
                         <td>10</td>
@@ -207,8 +238,8 @@
               <!-- table:end -->
 
               <!-- statics:start -->
-              <div class="skills-container">
-                <div class="d-flex">
+              <div class="skills-container min-H w-100">
+                <div class="d-flex justify-content-space-between">
                   <h5>View skills</h5>
 
                   <select name="this week" id="">
@@ -216,34 +247,28 @@
                     <option value="">Next week</option>
                   </select>
                 </div>
-                <div class="d-flex">
+                <div class="d-flex justify-content-space-between">
                   <h6>total views</h6>
                   <h6>total sells</h6>
                 </div>
-                <div class="view-bar">
+                <div class="view-bar d-flex justify-content-space-between">
                   <div class="bar">
-                    <div></div>
-                    <div></div>
+                    <div class="bar-item"></div>
                   </div>
                   <div class="bar">
-                    <div></div>
-                    <div></div>
+                    <div class="bar-item"></div>
                   </div>
                   <div class="bar">
-                    <div></div>
-                    <div></div>
+                    <div class="bar-item"></div>
                   </div>
                   <div class="bar">
-                    <div></div>
-                    <div></div>
+                    <div class="bar-item"></div>
                   </div>
                   <div class="bar">
-                    <div></div>
-                    <div></div>
+                    <div class="bar-item"></div>
                   </div>
                   <div class="bar">
-                    <div></div>
-                    <div></div>
+                    <div class="bar-item"></div>
                   </div>
                 </div>
               </div>
