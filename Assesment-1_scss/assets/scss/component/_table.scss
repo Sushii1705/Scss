@@ -1,0 +1,18 @@
+.table-container {
+    height: 500px;
+    
+    table {
+        width: 100%;
+        text-align: left;
+        background-color: $white;
+        border-spacing: 2px;
+        border-collapse: collapse;
+    }
+    th,td {
+        padding: 1rem 1rem;
+    }
+    tr {
+        // background-color: $table-row-bg-color;
+        border-bottom: 2px solid $light ;
+      }
+    }

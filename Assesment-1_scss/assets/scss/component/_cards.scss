@@ -1,1 +1,67 @@
 // Card styles goes here
+.cards-container {
+  padding-bottom: $padding-bottom;
+  
+  .cards {
+    width: 15%;
+    background-color: white;
+    padding: 1rem;
+    transition: all $transition-timing;
+    @include breakpoint (xl) {
+      width: 30%;
+      &:first-child,&:nth-child(2),&:nth-child(3) {
+        margin-bottom: 2rem;
+      }
+    }
+    .cards-text-sm{
+      font-size: 15px;
+    }
+    .cards-text {
+      font-size: 25px;
+    }
+    span {
+      padding: 10px;
+      // background: aqua;
+      border-radius: 20px;
+    }
+  }
+}
+
+.cards-icon-bg {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+@each $key,$value in $icon-bg-color {
+  .icon-#{$key} {
+    color: $value;
+    background-color: rgba($value,0.15);
+  }
+  
+}
+
+@each $key, $clr in $theme-colors {
+  .cards-#{$key} {
+    .text-#{$key} {
+      color: $clr;
+    }
+    
+    &:hover {
+      background-color: $clr;
+      color: $white;
+      .card-icon{
+        color:$white;
+      }
+      .card-text-sm {
+        color: $white;
+      }
+      
+      .text-#{$key} {
+        color: $white;
+      }
+    }
+  }
+  .icon-#{$key} {
+    color: $clr;
+  }
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css " />
+    <link rel="stylesheet" href="./assets/icons/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- wrapper-start -->
+    <div class="wrapper h-100">
+      <!-- header-start -->
+      <div class="header d-flex">
+        <div class="header-badge">
+          <span></span>
+          <h2>Tally Scan</h2>
+        </div>
+        <div
+          class="topbar-nav d-flex flex-grow-1 justify-content-space-between align-items-center"
+        >
+          <div class="topbar-title">
+            <h3>Dashboard</h3>
+          </div>
+          <input type="checkbox" id="check-menu"/>
+
+          <div class="topbar-nav-items d-flex justify-content-space-between">
+            <div>
+              <span class="icon-bell"></span>
+            </div>
+            <figure>
+              <img src="./assets/image/avatar-svgrepo-com.svg" alt="avatar" />
+            </figure>
+            <h5>John smith</h5>
+            <span class="icon-circle-down"></span>
+          <label for="check-menu"></label>
+          
+          </div>
+        </div>
+      </div>
+      <!-- header-end -->
+      <div class="d-flex h-100 main-sec">
+        <!-- sidebar-start -->
+        <input type="checkbox" id="checkbox" />
+        
+        <aside id="primarynav" class="overflow-auto">
+          <h5 class="nav-title">General</h5>
+          <ul class="nav-list">
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-search icon"></span>
+                Search
+              </a>
+            </li>
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-bell icon"></span>
+                Alearts
+              </a>
+            </li>
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-tags icon"></span>
+                Tags
+              </a>
+            </li>
+          </ul>
+          <h5 class="nav-title">Others</h5>
+          <ul class="nav-list">
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-setting icon"></span>
+                Setting
+              </a>
+            </li>
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-tips icon"></span>
+                Tips
+              </a>
+            </li>
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-trash icon"></span>
+                Trash
+              </a>
+            </li>
+            <li class="nav-items">
+              <a href="#">
+                <span class="icon-logout icon"></span>
+                Logout
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <label class="toggle" for="checkbox"
+          ><span href="#" class="icon-circle-right"></span
+        ></label>
+        <!-- sidebar-end -->
+        <!-- main-start -->
+        <div class="container flex-grow-1 overflow-auto">
+          <div class="btn-sucsess justify-content-space-between">
+              <div class="d-flex filter-main">
+
+                  <span class="icon-filter icons"></span>
+                  <p>   filter</p>
+              </div>
+          </div>
+          <div class="cards-container d-flex justify-content-space-between flex-wrap">
+            <div class="cards d-flex justify-content-space-between cards-gray">
+              <div>
+                <p class="cards-text-sm">Scans</p>
+                <h5 class="cards-text">350</h5>
+              </div>
+              <div class="cards-icon-bg">
+                <span class="cards-icon icon-barcode text-gray icon-gray"></span>
+              </div>
+            </div>
+            <div class="cards d-flex justify-content-space-between cards-secondary">
+              <div>
+                <p class="cards-text-sm">List</p>
+                <h5 class="cards-text">350</h5>
+              </div>
+              <div class="cards-icon-bg">
+                <span class="cards-icon icon-list2 text-secondary icon-secondary"></span>
+              </div>
+            </div>
+            <div class="cards d-flex justify-content-space-between cards-primary">
+              <div>
+                <p class="cards-text-sm">Cost</p>
+                <h5 class="cards-text">$345</h5>
+              </div>
+              <div class="cards-icon-bg">
+                <span class="cards-icon icon-coin-euro text-primary icon-primary"></span>
+              </div>
+            </div>
+            <div class="cards d-flex justify-content-space-between cards-warning">
+              <div>
+                <p class="cards-text-sm">Buy Now</p>
+                <h5 class="cards-text">350</h5>
+              </div>
+              <div class="cards-icon-bg">
+                <span class="cards-icon icon-cart text-warning icon-warning"></span>
+              </div>
+            </div>
+            <div class="cards d-flex justify-content-space-between cards-accent">
+              <div>
+                <p class="cards-text-sm">Buy Cheaper</p>
+                <h5 class="cards-text">350</h5>
+              </div>
+              <div class="cards-icon-bg">
+                <span class="cards-icon icon-coin-dollar text-accent icon-accent"></span>
+              </div>
+            </div>
+            <div class="cards d-flex justify-content-space-between cards-danger">
+              <div>
+                <p class="cards-text-sm">Buy Healthier</p>
+                <h5 class="cards-text">350</h5>
+              </div>
+              <div class="cards-icon-bg ">
+                <span class="cards-icon icon-health text-danger icon-danger "></span>
+              </div>
+            </div>
+          </div>
+          <h5 class="activities">Recent Activity</h5>
+          <div class="table-container w-100 overflow-auto">
+            <table>
+              <thead>
+                <th>
+                  <p>Item</p>
+                  <span></span>
+                </th>
+                <th>
+                  <p>Date</p>
+                  <span></span>
+                </th>
+                <th>Type</th>
+                <th>
+                  <p>Est.Cost</p>
+                  <span></span>
+                </th>
+                <th>
+                  <p>Last</p>
+                  <span></span>
+                </th>
+                <th>
+                  <p>List</p>
+                  <span></span>
+                </th>
+                <th>Auto</th>
+                <th>Buy Now</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                   <figure>
+                    <img src="./assets/image/coke.svg" alt="coke-image"> 
+                    Skippy peanut Butter 160Z</figure>
+                    
+                  </td>
+                  <td>07 Nov,8:35pm</td>
+                  <td>Discarded</td>
+                  <td>$40.27</td>
+                  <td>18 Aug</td>
+                  <td>Grocery</td>
+                  <td>No</td>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/logo.svg" alt="image">
+                    </figure>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                      Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>08 Nov,8:35pm</td>
+                  <td>Want</td>
+                  <td>$76.50</td>
+                  <td>17 Aug</td>
+                  <td>Augst</td>
+                  <td>No</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                      Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>09 Nov,8:35pm</td>
+                  <td>Waiting</td>
+                  <td>$47.85</td>
+                  <td>22 Aug</td>
+                  <td>Wholefood</td>
+                  <td>No</td>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/logo.svg" alt="image">
+                    </figure>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                      Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>10 Nov,8:35pm</td>
+                  <td>Discarded</td>
+                  <td>$27.83</td>
+                  <td>26 Aug</td>
+                  <td>Grocery</td>
+                  <td>No</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                      Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>11 Nov,8:35pm</td>
+                  <td>Cancelled</td>
+                  <td>$35.02</td>
+                  <td>20 Aug</td>
+                  <td>Augst</td>
+                  <td>No</td>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/logo.svg" alt="image">
+                    </figure>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                      Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>12 Nov,8:35pm</td>
+                  <td>Want</td>
+                  <td>$32.85</td>
+                  <td>11 Aug</td>
+                  <td>Augst</td>
+                  <td>No</td>
+                  <td>N/A</td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                      Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>13 Nov,8:35pm</td>
+                  <td>Want</td>
+                  <td>$58.99</td>
+                  <td>23 Aug</td>
+                  <td>Wholefood</td>
+                  <td>No</td>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/logo.svg" alt="image">
+                    </figure>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/coke.svg" alt="coke-image"> 
+                       Skippy peanut Butter 160Z</figure>
+                  </td>
+                  <td>14 Nov,8:35pm</td>
+                  <td>Want</td>
+                  <td>$63.44</td>
+                  <td>22 Aug</td>
+                  <td>Grocery</td>
+                  <td>No</td>
+                  <td>
+                    <figure>
+                      <img src="./assets/image/logo.svg" alt="image">
+                    </figure>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- main-end -->
+      </div>
+    </div>
+    <!-- wrapper-end -->
+  </body>
+</html>

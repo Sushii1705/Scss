@@ -1,1 +1,60 @@
 // Header area style
+.header {
+    height: $hedaer-height;
+    background-color: $white;
+    padding: $padding;
+    // font-size: $font-size-base;
+    border-bottom:1px solid  $border-bottom;
+    .header-badge {
+        flex: 0 0 $header-badge-width;
+        
+    }
+    .topbar-nav {
+        font-size: 20px;
+        @include breakpoint(xl) {
+            padding: 0 1.5rem;
+        }
+
+        .topbar-nav-items {
+
+            width: 215px;
+            @include breakpoint(md) {
+                width: 100px;
+                position: absolute;
+                top: 50px;
+                background-color: white;
+                right: 40px;
+                display: flex;
+                flex-direction: column;
+                z-index: 100;
+                box-shadow: 0 0 12px 2px #0000001c;
+                padding: 1rem 0.2rem;
+                transform: translateY(-260px);
+                transition: $transition-timing all;
+              }
+              span {
+                color: $gray;
+              }
+        }
+    }
+}
+
+img {
+    height: 20px;
+    max-width: 100%;
+}
+
+#check-menu:checked ~ .side-icons {
+    transform: translateY(20px);
+  
+  }
+  #check-menu{
+    display: none;
+  }
+  label[for="check-menu"] {
+    display: none;
+    margin-top: 20px;
+    @include breakpoint(md){
+      display: block;
+    }
+  }
