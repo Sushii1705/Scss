@@ -9,12 +9,19 @@
       top: 0;
       left: 241px;
       transition: all $transition-timing;
+      @include breakpoint(md) {
+        left: 180px;
+      }
     }
 }
 #primarynav {
     flex: 0 0 $sidebar-width;
     padding: 1.5rem 0;
     transition: all $transition-timing;
+    @include breakpoint (md) {
+      flex: 0 0 180px;
+
+    }
 
     .nav-title {
         padding-left: 10px;

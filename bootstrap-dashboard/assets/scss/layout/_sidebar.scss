@@ -1,0 +1,70 @@
+.main-sec {
+  position: relative;
+  #checkbox {
+    // position: absolute;
+    display: none;
+  }
+  label {
+    position: absolute;
+    top: 0;
+    left: 241px;
+    transition: all $transition-timing;
+    @include breakpoint(md) {
+      left: 180px;
+    }
+  }
+}
+#primarynav {
+  flex: 0 0 $sidebar-width;
+  padding: 1.5rem 0;
+  transition: all $transition-timing;
+  @include breakpoint(md) {
+    flex: 0 0 180px;
+  }
+
+  .nav-title {
+    padding-left: 10px;
+  }
+}
+.nav {
+  padding: 1rem 0 3.5rem 0;
+  .nav-item {
+    width: 100%;
+  }
+
+  a {
+    display: block;
+    color: $extra-light;
+    padding: 1.5rem 2rem;
+    border-left:4px solid $white;
+
+    .icon {
+      padding-right: 10px;
+    }
+  }
+}
+label {
+  span {
+    color: $gray;
+    font-size: 1.5rem;
+  }
+}
+#checkbox:checked + #primarynav {
+  width: 0;
+  flex-basis: 0;
+  padding: 0px;
+}
+
+#checkbox:checked + #primarynav ~ .toggle {
+  left: 0%;
+  span {
+    display: block;
+    transform: rotate(180deg);
+  }
+}
+
+a:hover {
+  border-left-color:$primary;
+  background-color: #f2fcf4;
+  color: $primary;
+}

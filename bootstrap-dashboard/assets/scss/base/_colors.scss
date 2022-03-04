@@ -1,0 +1,41 @@
+
+$primary: #4db661;
+
+$secondary: #389cff;
+
+$danger:#e07a7a;
+
+$accent: #6c68ff;
+
+$warning:#e89630;
+
+$white:#ffffff;
+
+
+
+// // Mainly use for Normal Text color
+$gray: #808080;
+
+// // Additional Shades of gray color
+$light: #fafafa;
+$extra-light: #51525b;
+
+// // Dedicated for button text only
+$btn-text-primary: $white;
+
+$icon-bg-color: (
+   "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "accent": $accent,
+  "warning": $warning,
+  "gray":$gray
+);
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "accent": $accent,
+  "warning": $warning,
+  "gray":$gray
+);
