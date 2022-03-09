@@ -1,0 +1,26 @@
+.main {
+  padding: $padding;
+  .main-stats {
+    padding: $padding;
+
+    .search {
+      top: 10px;
+      left: 10px;
+    }
+    .card-container {
+      border-radius: $border-radius;
+      .card {
+        border: none;
+
+        background-color: $warning;
+
+        .icon-bg {
+          padding: $icon-bg-padding;
+          border-radius: 12px;
+
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
